@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #1a4104e8;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f4f74e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+}
+
+.navbar {
+    background-color: #1a4104e8;
+    border: 1px solid #f4f74e;
+    width: 100%;
+    height: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    position: fixed;
+}
+
+.botao {
+    background-color: #1a4104e8;
+    border: 1px solid #f4f74e;
+    width: 100%;
+    height: 50px;
+    display: none;
+    justify-content: space-between;
+    padding-right: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.botao button {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin-left: 20px;
+}
+
+.navbar_on {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: 300px;
+}
+
+nav img {
+    width: 80px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffff00;
+}
+
+.navbar a:hover {
+    color: #ffff00;
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+ul {
+    margin: 10px 0px 0px 60px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.titulo {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#00000059, #00000059), url(img/museu.JPG);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.titulo h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.intro-2 {
+    padding-top: 50px;
+    width: 70%;
+}
+
+.manuel{
+width: 100%;
+    margin-top: 30px;
+    border: 1px solid #00000091;
+    border-radius: 15px;
+}
+
+.tour a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.tour a:hover {
+    color: #0000ff
+}
+
+.info-tour {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.qrcode {
+    width: 100%;
+    border: 1px solid #0000ff91;
+    border-radius: 15px;
+}
+
+.placa {
+    width: 38%;
+    border: 1px solid #00000091;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.museu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.pdf {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.itens-pdf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itens-pdf img{
+    width: 70%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.itens-pdf a{
+    text-align: center;
+}
+
+.itens-pdf button a{
+    text-decoration: none;
+    color: rgb(5, 83, 9);
+    font-weight: bold;
+}
+
+.itens-pdf button a:hover{
+    color: #0000ff;
+}
+
+.itens-pdf button{
+    width: 70%;
+    background-color: #1a41045d;
+    padding: 5px 5px 5px 5px;
+    margin-top: 2%;
+    text-align: center;
+    border: 1px solid #1a41045d;
+    border-radius: 20px;
+}
+
+.equipe {
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid #00000091;
+    border-radius: 15px;
+}
+
+.rodape {
+    width: 100%;
+    height: 70px;
+    background-color: #1a4104e8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rodape h4 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.rodape img {
+    height: 30px;
+}
+
+.rodape a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #ffff00;
+}
+
+@media (max-width: 950px) {
+    nav {
+        display: none;
+    }
+
+    .botao {
+        display: flex;
+    }
+
+    .placa{
+        width: 260px;
+    }
+
+    .itens-pdf{
+    margin-bottom: 15%;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+
+    .rodape h4 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .rodape a {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    .titulo h1{
+        font-size: 50px;
+    }
+}
